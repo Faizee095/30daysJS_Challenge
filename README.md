@@ -4,5 +4,6 @@
 <h3>Projects</h3>
 <ol type="1">
     <li>Piano-Player</li>
+    <li>Clock</li>
    
   </ol>
