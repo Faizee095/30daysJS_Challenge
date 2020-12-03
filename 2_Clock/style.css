@@ -9,11 +9,11 @@ body {
 .clock {
   width: 300px;
   height: 300px;
-  border: 20px solid white;
+  border: 10px solid white;
   border-radius: 50%;
   margin: 50px auto;
-  position: center center;
-  padding: 2rem;
+  position: relative;
+  padding: 20px;
 }
 
 .clock-face {
@@ -23,10 +23,39 @@ body {
   transform: translateY(-3px); 
 }
 
+.clock .number {
+  --rotation: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transform: rotate(var(--rotation));
+  font-size: 25px;
+}
+
+.clock .number1 { --rotation: 30deg; color: aliceblue;}
+.clock .number2 { --rotation: 60deg;color: aliceblue; }
+.clock .number3 { --rotation: 90deg; color: aliceblue;}
+.clock .number4 { --rotation: 120deg; color: aliceblue;}
+.clock .number4 { --rotation: 120deg; color: aliceblue;}
+.clock .number5 { --rotation: 150deg;color: aliceblue; }
+.clock .number6 { --rotation: 180deg; color: aliceblue;}
+.clock .number7 { --rotation: 210deg; color: aliceblue;}
+.clock .number8 { --rotation: 240deg; color: aliceblue;}
+.clock .number9 { --rotation: 270deg; color: aliceblue;}
+.clock .number10 { --rotation: 300deg;color: aliceblue; }
+.clock .number11 { --rotation: 330deg; color: aliceblue;}
+.clock .number12 { --rotation: 360deg; color: aliceblue;}
+
 .hand {
   width: 56%;
   height: 7px;
   background: black;
   position: absolute;
   top: 50%;
+  right:50%;
+  transform-origin: 100%;
+  transform: rotate(90deg) ;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+
