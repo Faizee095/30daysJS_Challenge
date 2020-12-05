@@ -6,6 +6,6 @@
     <li>Piano-Player</li>
     <li>Clock</li>
     <li>Countdown Timer</li>
-    <li>Quiz-App</li>
+    <li>Calm-App</li>
    
   </ol>
