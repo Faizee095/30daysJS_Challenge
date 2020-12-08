@@ -7,6 +7,6 @@
     <li>Clock</li>
     <li>Countdown Timer</li>
     <li>Quiz-App</li>
-    <li>Calm-App</li>
+    <li>Pranayama-App</li>
    
   </ol>
